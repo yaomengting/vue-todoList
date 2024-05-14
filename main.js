@@ -6,5 +6,10 @@ const app = Vue.createApp({
         {id: 2, title: "Learn React"},
       ]
     }
+  },
+  methods: {
+    deleteTodo(id){
+      this.todos = this.todos.filter(todo=> todo.id !== id)
+    }
   }
 })

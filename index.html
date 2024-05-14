@@ -11,7 +11,10 @@
   <div id="app">
     <div v-for="todo in todos">
       <ul>
-        <li>{{todo.title}}</li>
+        <li>{{todo.title}}
+
+          <button @click="deleteTodo(todo.id)">delete</button>
+        </li>
       </ul>
     </div>
   </div>
