@@ -9,10 +9,13 @@
 </head>
 <body>
   <div id="app">
+    <form @submit.prevent="onSubmit">
+    <input id="description" v-model="description" placeholder="what's need to be done?">
+    <button type="submit">Add New To Do</button>
+  </form>
     <div v-for="todo in todos">
       <ul>
         <li>{{todo.title}}
-
           <button @click="deleteTodo(todo.id)">delete</button>
         </li>
       </ul>
