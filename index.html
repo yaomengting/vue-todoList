@@ -15,7 +15,9 @@
   </form>
     <div v-for="todo in todos">
       <ul>
-        <li>{{todo.title}}
+        <li :class="{completed: todo.isDone}">
+          <input type="checkbox" v-model="todo.isDone"/>
+          {{todo.title}}
           <button @click="deleteTodo(todo.id)">delete</button>
         </li>
       </ul>

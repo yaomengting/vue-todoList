@@ -1,0 +1,33 @@
+#app {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#app form {
+  margin-bottom: 20px;
+}
+
+#app input, #app button {
+  padding: 10px;
+  margin: 5px 0;
+}
+
+#app ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#app li {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#app .completed {
+  text-decoration: line-through;
+}
